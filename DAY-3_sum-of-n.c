@@ -13,3 +13,23 @@ int main() {
     printf("%d",r);
     return 0;
 }
+
+//Sum of N natural numbers using For loop
+
+#include <stdio.h>
+int sum(int n){
+    int s=0;
+    int i;
+    for(i=1;i<=n;i++){
+        s=s+i;
+    }
+    return s;
+}
+
+int main() {
+    // Write C code here
+    int r;
+    r=sum(5);
+    printf("%d",r);
+    return 0;
+}
