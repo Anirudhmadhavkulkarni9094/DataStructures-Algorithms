@@ -42,22 +42,7 @@ void RDisplay(struct Node *p)
         RDisplay(p->next);
     }
 }
-int RADD(struct Node *p){
-    if(p!=0){
-        return RADD(p->next)+1;
-    }
-    else{
-        return 0;
-    }
-}
-int ADD( struct Node *p){
-    int sum =0;
-    while(p!=0){
-        sum+=p->data;
-        p=p->next;
-    }
-    return sum;
-}
+
 
 
 int main()
@@ -67,7 +52,7 @@ int main()
     int n = sizeof(A)/4;
     create(A,n);
     printf("%d",Display(first));
-    printf("%d",RADD(first));
+    printf("%d",RDisplay(first));
 
     return 0;
 }
